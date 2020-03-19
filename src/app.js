@@ -21,11 +21,14 @@ function moreAboutKaren(parents,noOfSiblings,isNuclearFamily){
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
-function doesFriendExist(NaN,number)
+function doesFriendExist(ageInText, ageInNumber)
 {
-    if(typeof(number)=='number'){
-        
-    }
+    if (isNaN(ageInText) === true)
+        return ageInText;
+    else if (isNaN(ageInNumber) === true)
+        return ageInNumber;
+    else
+        return NaN;
 }
 //Progression 4:
 //Lily gave Karen x sweets
