@@ -2,16 +2,31 @@
 //We've got some basic info about Karen's home
 //Debug the type of data provided
 //Return the types concatenated in a single variable
-
+function moreAboutHome(address, distanceFromTown, hasNeighbours) {
+    var str = typeof (address) + typeof (distanceFromTown) + typeof (hasNeighbours);
+    return str;
+}
 //Progression 2:
 //Check if the data given is of the right type
 //parents = String, noOfSiblings = Number, isNuclearFamily = Boolean
+function moreAboutKaren(parents,noOfSiblings,isNuclearFamily){
+    
+    if(typeof(parents)==="string"&& typeof(noOfSiblings)==="number"&& typeof(isNuclearFamily)==="boolean"){
+        return true;
+    }else
+    return false;
 
+}
 //Progression 3:
 //Lily is suspicious about Karen's new friend
 //Karen tells her friend's age and even writes it down
 //Check which one those is not a number (NaN) and return that value
-
+function doesFriendExist(NaN,number)
+{
+    if(typeof(number)=='number'){
+        
+    }
+}
 //Progression 4:
 //Lily gave Karen x sweets
 //Karen ate y sweets herself
